@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/animate.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -19,8 +25,9 @@
   </head>
 
   <body class="bg-gray-900 text-white">
-    <div 
-      class="w-full max-h-full bg-linear-to-b/hsl from-gray-900 via-fuchsia-600/10 to-indigo-600/20"
+
+    <div
+      class="w-full max-h-full bg-linear-to-b/hsl from-gray-900 to-indigo-600/15"
     >
       <!-- HEADER START -->
       <header
@@ -92,7 +99,10 @@
 
       <main>
         <!-- HERO SECTION START -->
-        <section id="home" class="mt-16 mb-14 mx-auto lg:px-18 py-2 hero-section">
+        <section
+          id="home"
+          class="mt-16 mb-14 mx-auto lg:px-18 py-2 hero-section"
+        >
           <div
             class="flex flex-row justify-between items-center gap-10 max-w-screen"
           >
@@ -257,10 +267,7 @@
         <!-- HERO SECTION END -->
 
         <!-- ABOUT SECTION START -->
-        <section
-          id="about"
-          class="mb-26 px-12 pt-24 about-section"
-        >
+        <section id="about" class="mb-26 px-12 pt-24 about-section">
           <header class="flex items-center mb-28 gap-5">
             <div class="w-full h-1 bg-linear-to-r from-0% to-white"></div>
             <div class="w-full text-center">
@@ -269,15 +276,17 @@
             <div class="w-full h-1 bg-linear-to-l from-0% to-white"></div>
           </header>
 
-          <div class="flex gap-10 px-20">
-            <figure class="aspect-square overflow-hidden fade-right">
-              <img
-                src="img/ale.jpg"
-                alt="Ahmad Lesmana profile photo"
-                class="object-cover max-w-md rounded-2xl"
-              />
-            </figure>
-            <article class="w-1/2 fade-up">
+          <div class="flex gap-10 px-20  mx-auto">
+            <div class="w-1/2 flex item-center justify-center">
+              <figure class="aspect-square overflow-hidden fade-right ">
+                <img
+                  src="img/ale.jpg"
+                  alt="Ahmad Lesmana profile photo"
+                  class="object-cover max-w-md rounded-2xl"
+                />
+              </figure>
+            </div>
+            <article class="w-1/2 fade-up-full">
               <h3 class="text-2xl font-semibold mb-8">Tentang</h3>
               <div class="flex items-stretch gap-5">
                 <div
@@ -316,184 +325,314 @@
 
         <!-- TECH STACK START -->
         <section id="tech-stack" class="mb-26 px-12">
-          <div class="h-1 w-full bg-linear-to-r/hsl  from-indigo-600  to-fuchsia-600 rounded-full mb-16 heading-animate"></div>
+          <div class="heading-animate pt-5">
+            <div
+              class="h-1 mt-5 w-full bg-linear-to-r/hsl from-indigo-600 to-fuchsia-600 rounded-full mb-16"
+            ></div>
+          </div>
           <div class="px-10">
-            <h1 class="text-4xl font-bold  w-fit pb-2 mb-12 fade-up"><i class="bi bi-stack mr-2"></i>Tech Stack</h1>
+            <h1 class="text-4xl font-bold w-fit pb-2 mb-12 fade-up">
+              <i class="bi bi-stack mr-2"></i>Tech Stack
+            </h1>
             <div class="mb-16">
               <div class="px-5 inline-block about-section">
-                <h3 class="text-2xl font-semibold text-fuchsia-600 ">
+                <h3 class="text-2xl font-semibold text-fuchsia-600">
                   <i class="fa-solid fa-code"></i>
-                  Languages</h3>
+                  Languages
+                </h3>
                 <div class="h-1 w-1/2 rounded-full bg-white mt-2"></div>
               </div>
               <!-- LNAGLUAGE LIST START -->
               <div class="px-3 flex flex-wrap justify-center gap-4 mt-8">
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-cyan-400">
                     <i class="fa-brands fa-golang"></i>
-                  </span> | 
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">Go </span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-yellow-300">
                     <i class="fa-brands fa-js"></i>
-                  </span> | 
-                  <span class="text-slate-300 hover:text-white">Javascript</span>
+                  </span>
+                  |
+                  <span class="text-slate-300 hover:text-white"
+                    >Javascript</span
+                  >
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-orange-500">
-                    <i class="fa-brands fa-html5"></i>                  
-                  </span> | 
+                    <i class="fa-brands fa-html5"></i>
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">HTML5</span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-[#652388]">
                     <i class="fa-brands fa-css"></i>
-                  </span> | 
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">CSS</span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-bold text-[#8993be]">
                     <i class="fa-brands fa-php"></i>
-                  </span> | 
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">PHP</span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-bold text-blue-500">
                     <i class="fa-brands fa-java"></i>
-                  </span> | 
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">Java</span>
                 </div>
               </div>
               <!-- LNAGLUAGE LIST end -->
-              
             </div>
 
             <div class="mb-16">
               <div class="px-5 inline-block about-section">
-                <h3 class="text-2xl font-semibold text-red-600 "><i class="fa-solid fa-cube"></i>
-                Frameworks</h3>
+                <h3 class="text-2xl font-semibold text-red-600">
+                  <i class="fa-solid fa-cube"></i> Frameworks
+                </h3>
                 <div class="h-1 w-1/2 rounded-full bg-white mt-2"></div>
               </div>
               <div class="px-3 flex flex-wrap justify-center gap-4 mt-8">
                 <!-- FRAMEWORK LIST START  -->
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-red-600">
                     <i class="fa-brands fa-laravel"></i>
-                  </span> | 
-                  <span class="text-slate-300 hover:text-white">Laravel 11</span>
+                  </span>
+                  |
+                  <span class="text-slate-300 hover:text-white"
+                    >Laravel 11</span
+                  >
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-cyan-400">
-                    <i class="fa-brands fa-react "></i>
-                  </span> | 
+                    <i class="fa-brands fa-react"></i>
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">React </span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-green-700">
-                    <i class="fa-brands fa-vuejs "></i>
-                  </span> | 
+                    <i class="fa-brands fa-vuejs"></i>
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">Vue Js </span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-green-700">
                     <i class="devicon-nestjs-plain colored"></i>
-                  </span> | 
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">Nest JS</span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-green-700">
-                    <img src="https://cdn.simpleicons.org/nextdotjs/FFFFFF" alt="Next.js" width="30">
-                  </span> | 
+                    <img
+                      src="https://cdn.simpleicons.org/nextdotjs/FFFFFF"
+                      alt="Next.js"
+                      width="30"
+                    />
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">Next JS</span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 fade-right transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-green-700">
                     <i class="devicon-nodejs-plain colored"></i>
-                  </span> | 
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">Node JS</span>
                 </div>
                 <!-- FRAMEWORK LIST END  -->
-                
               </div>
-              
             </div>
             <div class="mb-16">
               <div class="px-5 inline-block about-section">
-                <h3 class="text-2xl font-semibold text-orange-600 "><i class="fa-solid fa-database mr-3"></i>Databases</h3>
+                <h3 class="text-2xl font-semibold text-orange-600">
+                  <i class="fa-solid fa-database mr-3"></i>Databases
+                </h3>
                 <div class="h-1 w-1/2 rounded-full bg-white mt-2"></div>
               </div>
-              <div class="px-3 flex flex-wrap justify-center gap-4 mt-8 fade-up">
+              <div
+                class="px-3 flex flex-wrap justify-center gap-4 mt-8 fade-up"
+              >
                 <!-- DB LIST START  -->
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2  transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold">
                     <i class="devicon-mongodb-plain colored"></i>
-                  </span> | 
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">Mongo DB </span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2  transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-cyan-400">
-                    <i class="devicon-mysql-plain "></i>
-                  </span> | 
+                    <i class="devicon-mysql-plain"></i>
+                  </span>
+                  |
                   <span class="text-slate-300 hover:text-white">MySQL </span>
                 </div>
-                <div class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2  transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg">
+                <div
+                  class="w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg"
+                >
                   <span class="text-3xl font-semibold text-cyan-600">
-                    <i class="devicon-postgresql-plain "></i>
-                  </span> | 
-                  <span class="text-slate-300 hover:text-white">Postgresql </span>
+                    <i class="devicon-postgresql-plain"></i>
+                  </span>
+                  |
+                  <span class="text-slate-300 hover:text-white"
+                    >Postgresql
+                  </span>
                 </div>
                 <!-- DB LIST END  -->
-                
               </div>
-              
             </div>
           </div>
         </section>
         <!-- TECH STACK END -->
 
         <!-- PORTOFOLIO START -->
-        <section id="tech-stack" class="mb-96 px-12">
+        <section id="tech-stack" class="mb-26 px-12">
           <div class="pt-10 heading-animate-center">
-            <div class="h-1 w-full bg-linear-to-r/hsl  from-teal-400/10 via-teal-400  to-teal-400/10 rounded-full mb-16 "></div>
-
+            <div
+              class="h-1 mt-5 w-full bg-linear-to-r/hsl from-teal-400/10 via-teal-400 to-teal-400/10 rounded-full mb-16"
+            ></div>
           </div>
-          <h3 class="text-3xl font-bold mx-auto w-fit pb-2 mb-12 fade-up">My Work <span class=" bg-linear-to-r/hsl from-indigo-600 to-fuchsia-700 bg-clip-text text-transparent w-fit">Experience</span> </h3>
+          <h3 class="text-3xl font-bold mx-auto w-fit pb-2 mb-12 fade-up">
+            My Work
+            <span
+              class="bg-linear-to-r/hsl from-indigo-600 to-fuchsia-700 bg-clip-text text-transparent w-fit"
+              >Experience</span
+            >
+          </h3>
           <div class="flex justify-between gap-10 px-28 mt-16">
-            <div class="w-1/2 ">
-              <h4 class="text-2xl fade-right">Full stack Developer - SMK Infokom Bogor (2022 - Present) </h4>
+            <div class="w-1/2">
+              <h4 class="text-2xl fade-right">
+                Full stack Developer - SMK Infokom Bogor (2022 - Present)
+              </h4>
               <!-- EXPERIENCE LIST START -->
-              <div class="detail-porto mt-10 fade-up">
-                <details class="mt-3" open name="experience">
-                  <summary class="marker:text-blue-500 marker:text-2xl text-lg">hay</summary>
+              <div class="detail-porto mt-10 fade-up-full">
+                <details class="mt-5" open name="experience">
+                  <summary class="marker:text-blue-500 marker:text-3xl">
+                    <span class="ml-2 text-xl">Pengalaman Organisasi</span>
+                  </summary>
                   <div class="details-content-wrapper px-2 mt-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptates cum, quaerat tenetur quod nam pariatur at praesentium alias recusandae laudantium nobis qui fugiat illo nulla unde necessitatibus quidem. Reprehenderit!</p>
+                    <p class="ml-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad voluptates cum, quaerat tenetur quod nam pariatur at
+                      praesentium alias recusandae laudantium nobis qui fugiat
+                      illo nulla unde necessitatibus quidem. Reprehenderit!
+                    </p>
                   </div>
                 </details>
-                <details class="mt-3" open name="experience">
-                  <summary class="marker:text-blue-500 marker:text-2xl text-lg">hay</summary>
+                <details class="mt-5" open name="experience">
+                  <summary class="marker:text-blue-500 marker:text-3xl">
+                    <span class="ml-2 text-xl">Leadership</span>
+                  </summary>
                   <div class="details-content-wrapper px-2 mt-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptates cum, quaerat tenetur quod nam pariatur at praesentium alias recusandae laudantium nobis qui fugiat illo nulla unde necessitatibus quidem. Reprehenderit!</p>
+                    <p class="ml-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad voluptates cum, quaerat tenetur quod nam pariatur at
+                      praesentium alias recusandae laudantium nobis qui fugiat
+                      illo nulla unde necessitatibus quidem. Reprehenderit!
+                    </p>
                   </div>
                 </details>
-                <details class="mt-3" open name="experience">
-                  <summary class="marker:text-blue-500 marker:text-2xl text-lg">hay</summary>
+                <details class="mt-5" open name="experience">
+                  <summary class="marker:text-blue-500 marker:text-3xl">
+                    <span class="ml-2 text-xl">UI/UX Design</span>
+                  </summary>
                   <div class="details-content-wrapper px-2 mt-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptates cum, quaerat tenetur quod nam pariatur at praesentium alias recusandae laudantium nobis qui fugiat illo nulla unde necessitatibus quidem. Reprehenderit!</p>
+                    <p class="ml-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad voluptates cum, quaerat tenetur quod nam pariatur at
+                      praesentium alias recusandae laudantium nobis qui fugiat
+                      illo nulla unde necessitatibus quidem. Reprehenderit!
+                    </p>
+                  </div>
+                </details>
+                <details class="mt-5" open name="experience">
+                  <summary class="marker:text-blue-500 marker:text-3xl">
+                    <span class="ml-2 text-xl">Frameworks Project</span>
+                  </summary>
+                  <div class="details-content-wrapper px-2 mt-2">
+                    <p class="ml-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad voluptates cum, quaerat tenetur quod nam pariatur at
+                      praesentium alias recusandae laudantium nobis qui fugiat
+                      illo nulla unde necessitatibus quidem. Reprehenderit!
+                    </p>
                   </div>
                 </details>
               </div>
+              <div
+                class="h-1 w-full mt-18 bg-linear-to-r/hsl from-0% to-white rounded-full mb-16"
+              ></div>
               <!-- EXPERIENCE LIST END -->
             </div>
 
-            <div class="w-1/2">
-              <div class="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-2xl fade-up-full not-visited:">
+            <div class="w-1/2 flex item-center justify-center">
+              <div
+                class="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-2xl fade-up-full not-visited:"
+              >
                 <div id="slider" class="slider w-full h-full">
-                  <img src="img/ale.jpg" alt="Image 1" class="w-full h-full object-cover flex-shrink-0">
-                  <img src="img/photo2.jpg" alt="Image 2" class="w-full h-full object-cover flex-shrink-0">
-                  <img src="img/photo3.jpg" alt="Image 3" class="w-full h-full object-cover flex-shrink-0">
-                  <img src="img/photo4.jpg" alt="Image 4" class="w-full h-full object-cover flex-shrink-0">
-                  <img src="img/photo5.jpg" alt="Image 5" class="w-full h-full object-cover flex-shrink-0">
+                  <img
+                    src="img/ale.jpg"
+                    alt="Image 1"
+                    class="w-full h-full object-cover flex-shrink-0"
+                  />
+                  <img
+                    src="img/photo2.jpg"
+                    alt="Image 2"
+                    class="w-full h-full object-cover flex-shrink-0"
+                  />
+                  <img
+                    src="img/photo3.jpg"
+                    alt="Image 3"
+                    class="w-full h-full object-cover flex-shrink-0"
+                  />
+                  <img
+                    src="img/photo4.jpg"
+                    alt="Image 4"
+                    class="w-full h-full object-cover flex-shrink-0"
+                  />
+                  <img
+                    src="img/photo5.jpg"
+                    alt="Image 5"
+                    class="w-full h-full object-cover flex-shrink-0"
+                  />
                 </div>
               </div>
             </div>
@@ -501,9 +640,65 @@
         </section>
         <!-- PORTOFOLIO END -->
 
+        <!-- WORK WITH START -->
+        <section class="mb-96 px-12">
+          <div class="mb-16 ">
+            <div class="fade-up">
+              <h1 class="text-center text-3xl font-semibold mb-4">
+                Kerja Sama
+              </h1>
+              <h3 class="text-center text-xl text-slate-300">
+                Berikut adalah langkah-langkah saya untuk mengerjakan sebuah proyek
+              </h3>
+            </div>
+
+            <div class="mt-20">
+              <div class="flex px-20 mx-auto">
+                <div class="w-1/2 border-r-2 px-3 border-white">
+                  <div class="fade-up-full px-5 py-8">
+                    <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">1.</span>Analisis Kebutuhan</h1>
+                  <p class="px-2">Kita pastikan saya punya semua yang dibutuhin. mulai dari asset foto, desain, sampai informasi lainnya agar proyek kamu bisa selesai dengan lancar dan hasilnya sesuai harapan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex px-20 mx-auto">
+                <div class="w-1/2 border-r-2 px-3 border-white"></div>
+                <div class="w-1/2 px-3 border-white">
+                  <div class="fade-up-full px-5 py-8">
+                  <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">2. </span>Riset</h1>
+                  <p class="px-2">Saya menyusun struktur model atau perancangan yang sesuai dengan kebutuhan proyek, sambil kembali mempelajari dan mendalami setiap detail yang dibutuhkan oleh website yang sedang saya kerjakan, agar hasil akhirnya bisa benar-benar optimal, fungsional, dan sesuai dengan tujuan yang diinginkan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex px-20 mx-auto">
+                <div class="w-1/2 border-r-2 px-3 border-white">
+                  <div class="fade-up-full px-5 py-8">
+                    <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">3. </span>Development</h1>
+                  <p class="px-2">Setelah semua kebutuhan proyek telah didapatkan. langkah selanjutnya adalah proses pengembangan dan pembuatan, hal ini dilakukan dengan cara yang efisien dan sesuai dengan deadline yang disetujui</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex px-20 mx-auto">
+                <div class="w-1/2 border-r-2 px-3 border-white"></div>
+                <div class="w-1/2 px-3 border-white">
+                  <div class="fade-up-full px-5 py-8">
+                  <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">4. </span>Hasil pertama</h1>
+                  <p class="px-2">Setelah pembuatan selesai, saya memastikan bahwa hasil dari pembuatan sesuai dengan kriteria dan tidak ada bug yang ditemui. lalu kamu bisa melakukan beberapa penyesuaian agar proyek mu berjalan dengan yang kamu inginkan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fade-up-full max-w-2xl px-5 py-8 mx-auto text-center">
+              <h1 class="mb-3 mt-5 mx-auto text-3xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold">Hasil Final</h1>
+            <p class="px-2">Setelah seluruh proses pengembangan selesai, proyek telah berhasil disesuaikan sepenuhnya dengan kebutuhan dan kriteria yang ditentukan. Tidak ditemukan bug atau error yang mengganggu, dan semua fitur berjalan dengan baik sesuai fungsinya. Proyek kini siap digunakan secara optimal, namun penyesuaian lanjutan tetap dapat dilakukan jika diperlukan di masa mendatang untuk meningkatkan performa atau menyesuaikan dengan kebutuhan pengguna.</p>
+            <div class="w-full h-1 bg-white mt-8 rounded-full heading-animate-center"></div>
+            </div>
+          </div>
+        </section>
+        <!-- WORK WITH END -->
       </main>
 
-      <footer class="mt-16 py-8  text-center">
+      <footer class="mt-16 py-8 text-center">
         <p>© 2025 Ahmad Lesmana. All rights reserved.</p>
       </footer>
     </div>

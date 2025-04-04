@@ -91,38 +91,98 @@ body {
 }
 
 .detail-porto {
-  .details-content-wrapper {
-    width: min(30vw, 32rem);
+  details {
+    overflow: hidden;
     
-    p {
-      transform: translateY(2rem);
-      opacity: 0;
-      transition: all 0.5s ease;
+    /* Animasi konten saat membuka dan menutup */
+    .details-content-wrapper {
+      width: min(30vw, 32rem);
+      
+      p {
+        transform: translateY(2rem);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+      }
     }
     
-    [open] & p {
-      transform: none;
+    /* Animasi konten setelah terbuka */
+    &[open] .details-content-wrapper p {
+      transform: translateY(0);
       opacity: 1;
       transition-delay: 0.5s;
     }
-  }
-  
-  ::details-content {
-    transition: width 0.5s ease, content-visibility 0.5s ease allow-discrete;
-    width: 0;
-  }
-  
-  [open]::details-content {
-    width: min(30vw, 32rem);
-  }
-  
-  /* Add this for animation when closing */
-  &:not([open]).closing p {
-    transform: translateY(2rem);
-    opacity: 0;
-    transition: all 0.5s ease;
+    
+    /* Mengatur animasi transisi untuk details-content */
+    &::details-content {
+      transition: width 0.5s ease, content-visibility 0.5s ease allow-discrete;
+      width: 0;
+    }
+    
+    &[open]::details-content {
+      width: min(30vw, 32rem);
+    }
+    
+    /* Tambahkan animasi untuk details summary */
+    summary {
+      cursor: pointer;
+      position: relative;
+      list-style: none;
+      transition: background-color 0.3s ease;
+      padding-bottom: 0.5rem;
+      
+      &::marker,
+      &::-webkit-details-marker {
+        display: none;
+      }
+      
+      /* Indikator untuk status terbuka/tertutup */
+      &::after {
+        content: '+';
+        position: absolute;
+        right: 1rem;
+        transition: transform 0.3s ease;
+      }
+      
+      /* Tambahkan border bawah dengan animasi */
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background: #3498db; /* Warna border - bisa disesuaikan */
+        transition: width 0.4s ease;
+      }
+    }
+    
+    /* Rotasi indikator saat details terbuka */
+    &[open] summary::after {
+      transform: rotate(45deg);
+    }
+    
+    /* Animasi border saat details terbuka */
+    &[open] summary::before {
+      width: 100%;
+    }
+    
+    /* Hover effect untuk border */
+    summary:hover::before {
+      width: 30%; /* Border sebagian saat hover */
+    }
+    
+    /* Gunakan animasi @keyframes untuk konten */
+    &[open] .details-content-wrapper {
+      animation: fadeDown 0.5s ease forwards;
+      animation-delay: 0.1s;
+    }
+    
+    &:not([open]) .details-content-wrapper {
+      animation: fadeUp 0.5s ease forwards;
+    }
   }
 }
+
 
 
 .about-section {
@@ -170,7 +230,7 @@ body {
   transform: translateY(30px);
   animation: fadeInUp 1.2s ease-in-out forwards;
   animation-timeline: view();
-  animation-range: entry 25% cover 35%;
+  animation-range: entry 20% cover 45%;
 }
 
 .fade-right {
