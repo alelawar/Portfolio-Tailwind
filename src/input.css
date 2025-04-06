@@ -6,3 +6,7 @@
 .active-menu {
     @apply  bg-black/20 rounded-full;
 }
+
+.navbar-fixed {
+    @apply bg-black/20 backdrop-blur-lg fixed w-full top-0 z-10
+}

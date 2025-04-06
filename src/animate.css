@@ -64,7 +64,6 @@ body {
 
 .about-details {
   .details-content-wrapper {
-    width: min(30vw, 32rem);
     p {
       transform: translateY(2rem);
       opacity: 0;

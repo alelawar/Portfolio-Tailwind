@@ -1,14 +1,14 @@
-let index = 0;
-const slides = document.querySelectorAll("#slider img");
-const totalSlides = slides.length;
-const slider = document.getElementById("slider");
+window.onscroll = function() {
+  const header = document.getElementById('header-link')
+  const fixedNav = header.offsetTop
 
-function nextSlide() {
-  index = (index + 1) % totalSlides; 
-  slider.style.transform = `translateX(-${index * 100}%)`;
+  if(window.pageYOffset > fixedNav ) {
+    header.classList.add('navbar-fixed')
+  } else {
+    header.classList.remove('navbar-fixed')
+  }
 }
 
-setInterval(nextSlide, 3000); // Ganti gambar setiap 3 detik
 
 
 const menu = document.getElementById('menu');
@@ -31,3 +31,15 @@ window.addEventListener('click', function () {
     menu.classList.remove('active-menu');
   }
 });
+
+  let index = 0;
+  const slides = document.querySelectorAll("#slider img");
+  const totalSlides = slides.length;
+  const slider = document.getElementById("slider");
+  
+  function nextSlide() {
+    index = (index + 1) % totalSlides; 
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+  
+  setInterval(nextSlide, 3000); // Ganti gambar setiap 3 detik

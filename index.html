@@ -25,20 +25,20 @@
   </head>
 
   <body class="bg-gray-900 text-white">
-
     <div
       class="w-full min-h-screen max-h-full bg-linear-to-b/hsl from-gray-900 to-indigo-600/15"
     >
       <!-- HEADER START -->
       <header
-        class="flex justify-between px-12 lg:px-18 py-8 text-center items-baseline"
+        class="flex justify-between md:px-18 py-6 px-6 text-center items-baseline transition duration-1000"
+        id="header-link"
       >
         <div class="logo">
-          <h1 class="lg:text-xl text-md font-bold">A.Lesmana</h1>
+          <h1 class="md:text-xl text-md font-bold">A.Lesmana</h1>
         </div>
 
         <nav
-          class="main-navigation flex items-baseline gap-16 "
+          class="main-navigation flex items-baseline gap-16"
           aria-label="Main navigation"
         >
           <ul class="lg:flex items-baseline gap-16 list-none hidden">
@@ -85,10 +85,10 @@
           </ul>
         </nav>
 
-        <div class=" relative group hover:shadow-xl lg:block hidden">
+        <div class="relative group hover:shadow-xl lg:block hidden">
           <a
             href="#collaboration"
-            class="font-bold text-lg text-transparent bg-gradient-to-r from-teal-400 to-indigo-600 bg-clip-text hover:bg-gradient-to-l transition-all duration-1000 ease-in-out px-2 py-1 inline-block"
+            class="font-bold text-md text-transparent bg-gradient-to-r from-teal-400 to-indigo-600 bg-clip-text hover:bg-gradient-to-l transition-all duration-1000 ease-in-out px-2 py-1 inline-block"
             >Kerja sama</a
           >
           <span
@@ -97,49 +97,115 @@
         </div>
 
         <div class="lg:hidden relative">
-          <i class="bi bi-list text-white text-xl py-1 px-2 transition-all duration-300 cursor-pointer hover:bg-gray-800 rounded" id="menu"></i>
-          <div class="hidden absolute right-0 mt-2 w-48 bg-gray-900 rounded-md shadow-lg z-50" id="nav-mobile">
+          <i
+            class="bi bi-list text-white text-xl py-1 px-2 transition-all duration-300 cursor-pointer hover:bg-gray-800 rounded"
+            id="menu"
+          ></i>
+          <div
+            class="hidden absolute right-0 mt-2 w-48 bg-gray-900 rounded-md shadow-md z-50"
+            id="nav-mobile"
+          >
             <nav class="py-1">
               <ul>
                 <li>
-                  <a href="#" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200"
+                  >
                     <!-- Icon Beranda -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6m-6 0H7v6h6v-6z" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6m-6 0H7v6h6v-6z"
+                      />
                     </svg>
                     Beranda
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200"
+                  >
                     <!-- Icon Tentang Saya -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A11.042 11.042 0 0112 15.5c2.21 0 4.255.672 5.879 1.804M12 12a4 4 0 100-8 4 4 0 000 8z" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5.121 17.804A11.042 11.042 0 0112 15.5c2.21 0 4.255.672 5.879 1.804M12 12a4 4 0 100-8 4 4 0 000 8z"
+                      />
                     </svg>
                     Tentang Saya
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200"
+                  >
                     <!-- Icon Portofolio -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 0a8 8 0 00-8 8h4l2-2m0 0a8 8 0 018-8v4l-2 2z" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6V4m0 0a8 8 0 00-8 8h4l2-2m0 0a8 8 0 018-8v4l-2 2z"
+                      />
                     </svg>
                     Portofolio
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200">
+                  <a
+                    href="#"
+                    class="flex items-center gap-2 px-4 py-2 text-sm text-gray-100 hover:bg-gray-800 hover:text-white transition-colors duration-200"
+                  >
                     <!-- Icon Kontak -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 10a9 9 0 11-18 0 9 9 0 0118 0zM15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 10a9 9 0 11-18 0 9 9 0 0118 0zM15 10a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
                     </svg>
                     Kontak
                   </a>
                 </li>
-                
+
                 <li class="my-2 border-t border-white">
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-100  hover:text-transparent transition-colors duration-200 bg-gradient-to-r from-teal-400 to-indigo-600 bg-clip-text">Kerja sama</a>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-100 hover:text-transparent transition-colors duration-200 bg-gradient-to-r from-teal-400 to-indigo-600 bg-clip-text"
+                    >Kerja sama</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -148,22 +214,24 @@
       </header>
       <!-- HEADER END -->
 
-      <main>
+      <main class="">
         <!-- HERO SECTION START -->
         <section
           id="home"
-          class="mt-16 mb-14 mx-auto lg:px-18 py-2 hero-section"
+          class="md:mt-16 mb-14 mx-auto px-6 lg:px-18 py-2 hero-section"
         >
           <div
-            class="flex flex-row justify-between items-center gap-10 max-w-screen"
+            class="flex md:flex-row md:justify-between md:gap-10 flex-col-reverse justify-between items-center gap-18 max-w-screen"
           >
-            <article class="w-1/2">
-              <div class="details-container flex flex-row gap-3 about-details">
+            <article class="md:w-1/2 sm:w-full">
+              <div
+                class="details-container flex flex-row gap-3 items-center justify-center about-details"
+              >
                 <!-- DETAILS START -->
                 <details
                   name="project"
                   open
-                  class="relative h-[25rem] cursor-pointer marker: flex flex-row py-3 border-2 border-transparent rounded-xl open:rounded-2xl list-none appearance-none transition transform duration-700 ease-in-out hover:border-teal-400 hover:border-2 overflow-hidden open:border-violet-700 bg-[url('https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/42827783821a0d5fd41f29e97fc7bcb1-1742234452/portfolio%20v1/create-responsive-figma-website-ui-website-design-figma.jpg')] bg-fit bg-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-0 open:before:opacity-40 before:transition-opacity before:duration-500"
+                  class="relative h-[25rem] cursor-pointer flex flex-row py-3 border-2 border-transparent rounded-xl open:rounded-2xl list-none appearance-none transition transform duration-700 ease-in-out hover:border-teal-400 hover:border-2 overflow-hidden open:border-violet-700 bg-[url('https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/42827783821a0d5fd41f29e97fc7bcb1-1742234452/portfolio%20v1/create-responsive-figma-website-ui-website-design-figma.jpg')] bg-fit bg-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-0 open:before:opacity-40 before:transition-opacity before:duration-500"
                 >
                   <summary class="relative z-10">
                     <span
@@ -177,7 +245,7 @@
                     <h3 class="text-xl text-white font-semibold pb-3">
                       Belajar MERN
                     </h3>
-                    <p class="text-slate-100">
+                    <p class="text-slate-100 md:text-sm lg:text-lg">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Magni nemo nulla veniam alias iusto quasi nam tempore ipsa
                       sed amet!
@@ -186,12 +254,13 @@
                 </details>
                 <details
                   name="project"
-                  class="relative h-[25rem] cursor-pointer marker: flex flex-row py-3 border-2 border-transparent rounded-xl open:rounded-2xl list-none appearance-none transition transform duration-700 ease-in-out hover:border-teal-400 hover:border-2 overflow-hidden open:border-violet-700 bg-[url('https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/42827783821a0d5fd41f29e97fc7bcb1-1742234452/portfolio%20v1/create-responsive-figma-website-ui-website-design-figma.jpg')] bg-fit bg-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-0 open:before:opacity-40 before:transition-opacity before:duration-500"
+                  open
+                  class="relative h-[25rem] cursor-pointer flex flex-row py-3 border-2 border-transparent rounded-xl open:rounded-2xl list-none appearance-none transition transform duration-700 ease-in-out hover:border-teal-400 hover:border-2 overflow-hidden open:border-violet-700 bg-[url('https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/42827783821a0d5fd41f29e97fc7bcb1-1742234452/portfolio%20v1/create-responsive-figma-website-ui-website-design-figma.jpg')] bg-fit bg-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-0 open:before:opacity-40 before:transition-opacity before:duration-500"
                 >
                   <summary class="relative z-10">
                     <span
                       class="px-3 h-10 w-10 font-bold text-xl mx-3 bg-blue-600 rounded-full cursor-pointer flex items-center justify-center"
-                      >2</span
+                      >1</span
                     >
                   </summary>
                   <div
@@ -200,7 +269,7 @@
                     <h3 class="text-xl text-white font-semibold pb-3">
                       Belajar MERN
                     </h3>
-                    <p class="text-slate-100">
+                    <p class="text-slate-100 md:text-sm lg:text-lg">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Magni nemo nulla veniam alias iusto quasi nam tempore ipsa
                       sed amet!
@@ -209,12 +278,13 @@
                 </details>
                 <details
                   name="project"
-                  class="relative h-[25rem] cursor-pointer marker: flex flex-row py-3 border-2 border-transparent rounded-xl open:rounded-2xl list-none appearance-none transition transform duration-700 ease-in-out hover:border-teal-400 hover:border-2 overflow-hidden open:border-violet-700 bg-[url('https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/42827783821a0d5fd41f29e97fc7bcb1-1742234452/portfolio%20v1/create-responsive-figma-website-ui-website-design-figma.jpg')] bg-fit bg-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-0 open:before:opacity-40 before:transition-opacity before:duration-500"
+                  open
+                  class="relative h-[25rem] cursor-pointer flex flex-row py-3 border-2 border-transparent rounded-xl open:rounded-2xl list-none appearance-none transition transform duration-700 ease-in-out hover:border-teal-400 hover:border-2 overflow-hidden open:border-violet-700 bg-[url('https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/42827783821a0d5fd41f29e97fc7bcb1-1742234452/portfolio%20v1/create-responsive-figma-website-ui-website-design-figma.jpg')] bg-fit bg-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-0 open:before:opacity-40 before:transition-opacity before:duration-500"
                 >
                   <summary class="relative z-10">
                     <span
-                      class="px-3 h-10 w-10 font-bold text-xl mx-3 bg-blue-600 backdrop-blur-lg rounded-full cursor-pointer flex items-center justify-center"
-                      >3</span
+                      class="px-3 h-10 w-10 font-bold text-xl mx-3 bg-blue-600 rounded-full cursor-pointer flex items-center justify-center"
+                      >1</span
                     >
                   </summary>
                   <div
@@ -223,23 +293,26 @@
                     <h3 class="text-xl text-white font-semibold pb-3">
                       Belajar MERN
                     </h3>
-                    <p class="text-slate-100">
+                    <p class="text-slate-100 md:text-sm lg:text-lg">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Magni nemo nulla veniam alias iusto quasi nam tempore ipsa
                       sed amet!
                     </p>
                   </div>
                 </details>
+
                 <!-- DETAILS END -->
               </div>
             </article>
-      
-            <article class="w-1/2">
+
+            <article class="md:w-1/2 sm:w-full">
               <div class="ml-4">
-                <p class="text-2xl mb-3">Hello World, I'm Ale!!</p>
-                <h2 class="text-3xl font-semibold mb-1">Full-stack</h2>
+                <p class="text-xl sm:text-2xl mb-3">Hello World, I'm Ale!!</p>
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-1">
+                  Full-stack
+                </h2>
                 <h2
-                  class="text-5xl font-extrabold bg-linear-to-r/hsl from-indigo-600 to-fuchsia-700 bg-clip-text text-transparent w-fit"
+                  class="text-4xl sm:text-5xl font-extrabold bg-linear-to-r/hsl from-indigo-600 to-fuchsia-700 bg-clip-text text-transparent w-fit"
                 >
                   Developer
                 </h2>
@@ -247,26 +320,26 @@
               <div class="flex gap-6 mt-4">
                 <!-- CARD TEXT -->
                 <div
-                  class="bg-slate-600/20 max-h-full text-lg p-5 rounded-3xl backdrop-blur-3xl relative"
+                  class="bg-slate-600/20 max-h-full text-base sm:text-md p-4 sm:p-5 rounded-3xl backdrop-blur-3xl flex flex-col gap-4 justify-between"
                 >
                   <p>
                     Saya seorang full-stack developer tertarik pada pengembangan
                     web yang terstruktur, desain web modern, dan arsitektur
                     backend microservice.
                   </p>
-                  <div class="absolute bottom-3 right-3">
+                  <div class="relative group list-none">
                     <a
-                      href="#about"
-                      class="text-orange-500 block font-semibold px-2 py-1 mr-4 mb-3 transition-all duration-500 ease-in-out relative group"
-                      >Tentang
-                      <span
-                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-500 transition-all duration-500 ease-in-out group-hover:w-full"
-                      ></span>
-                    </a>
+                      href="#home"
+                      class="inline-block py-1 font-semibold text-teal-300 rounded-2xl transition-all duration-500 ease-in-out hover:text-white"
+                      >Kontak</a
+                    >
+                    <span
+                      class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-300 group-hover:left-0 group-hover:w-full transition-all duration-500 ease-in-out"
+                    ></span>
                   </div>
                 </div>
                 <!-- CARD TEXT END -->
-      
+
                 <!-- SOCIAL LINKS -->
                 <div class="social-links flex flex-col gap-5">
                   <div
@@ -279,7 +352,7 @@
                       class="group"
                       aria-label="GitHub Profile"
                       ><i
-                        class="bi bi-github text-3xl group-hover:text-black transition-all duration-500 ease-in-out"
+                        class="bi bi-github text-2xl sm:text-3xl group-hover:text-black transition-all duration-500 ease-in-out"
                       ></i
                     ></a>
                   </div>
@@ -293,7 +366,7 @@
                       class="group"
                       aria-label="Instagram Profile"
                       ><i
-                        class="bi bi-instagram text-3xl group-hover:text-amber-400/80 transition-all duration-500 ease-in-out"
+                        class="bi bi-instagram text-2xl sm:text-3xl group-hover:text-amber-400/80 transition-all duration-500 ease-in-out"
                       ></i
                     ></a>
                   </div>
@@ -305,7 +378,7 @@
                       class="group"
                       aria-label="Email Contact"
                       ><i
-                        class="bi bi-envelope-at text-3xl group-hover:text-teal-400 transition-all duration-500 ease-in-out"
+                        class="bi bi-envelope-at text-2xl sm:text-3xl group-hover:text-teal-400 transition-all duration-500 ease-in-out"
                       ></i
                     ></a>
                   </div>
@@ -316,34 +389,48 @@
           </div>
         </section>
         <!-- HERO SECTION END -->
-      
+
         <!-- ABOUT SECTION START -->
         <section id="about" class="mb-26 px-12 pt-24 about-section">
-          <header class="flex items-center mb-28 gap-5">
-            <div class="w-full h-1 bg-linear-to-r from-0% to-white"></div>
-            <div class="w-full text-center">
-              <h2 class="text-4xl text-indigo-600 font-bold">Tentang Saya</h2>
+          <header class="flex items-center mb-28 gap-5 justify-between">
+            <div
+              class="hidden lg:block w-full h-1 bg-linear-to-r from-0% to-white"
+            ></div>
+            <div class="lg:w-full md:w-md text-center">
+              <h2
+                class="lg:text-4xl md:text-3xl text-xl text-indigo-600 font-bold"
+              >
+                Tentang Saya
+              </h2>
             </div>
-            <div class="w-full h-1 bg-linear-to-l from-0% to-white"></div>
+            <div
+              class="w-1/2 lg:w-full h-1 bg-linear-to-l from-0% to-white"
+            ></div>
           </header>
-      
-          <div class="flex gap-10 px-20  mx-auto">
-            <div class="w-1/2 flex item-center justify-center">
-              <figure class="aspect-square overflow-hidden fade-right ">
+
+          <div
+            class="flex flex-col lg:flex-row gap-6 lg:gap-10 px-4 sm:px-8 md:px-20 items-center mx-auto"
+          >
+            <div class="w-full lg:w-1/2 flex items-center justify-center">
+              <figure
+                class="aspect-square overflow-hidden fade-right w-full max-w-sm mx-auto"
+              >
                 <img
                   src="img/ale.jpg"
                   alt="Ahmad Lesmana profile photo"
-                  class="object-cover max-w-md rounded-2xl"
+                  class="object-cover w-full h-full rounded-2xl"
                 />
               </figure>
             </div>
-            <article class="w-1/2 fade-up-full">
-              <h3 class="text-2xl font-semibold mb-8">Tentang</h3>
-              <div class="flex items-stretch gap-5">
+            <article class="w-full lg:w-1/2 fade-up-full mt-6 md:mt-0">
+              <h3 class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-8">
+                Tentang
+              </h3>
+              <div class="flex items-stretch gap-3 sm:gap-5">
                 <div
-                  class="w-5 self-stretch rounded-full bg-gradient-to-b from-gray-400/5 to-white"
+                  class="w-2 sm:w-5 self-stretch rounded-full bg-gradient-to-b from-gray-400/5 to-white"
                 ></div>
-                <div class="text-lg">
+                <div class="text-base sm:text-lg flex flex-col gap-5">
                   <p>
                     Saya
                     <span class="text-teal-500 font-semibold"
@@ -354,16 +441,18 @@
                     berbasis microservices, karena memungkinkan sistem yang
                     lebih fleksibel dan mudah dikembangkan.
                   </p>
-                  <div class="flex justify-between mt-20">
+                  <div
+                    class="flex flex-col sm:flex-row gap-4 sm:justify-between"
+                  >
                     <a
                       href="#contact"
-                      class="block px-5 py-2 bg-teal-400 rounded-2xl"
+                      class="block px-5 py-2 bg-teal-400 rounded-2xl text-center"
                       >Contact</a
                     >
                     <a
                       href="path-to-cv.pdf"
                       download
-                      class="block px-5 py-2 text-teal-400 border border-teal-400 hover:text-white hover:bg-teal-400 rounded-2xl transition duration-500 ease-in-out"
+                      class="block px-5 py-2 text-teal-400 border border-teal-400 hover:text-white hover:bg-teal-400 rounded-2xl transition duration-500 ease-in-out text-center"
                       >Download CV</a
                     >
                   </div>
@@ -373,7 +462,7 @@
           </div>
         </section>
         <!-- ABOUT SECTION END -->
-      
+
         <!-- TECH STACK START -->
         <section id="tech-stack" class="mb-26 px-12">
           <div class="heading-animate pt-5">
@@ -454,7 +543,7 @@
               </div>
               <!-- LNAGLUAGE LIST end -->
             </div>
-      
+
             <div class="mb-16">
               <div class="px-5 inline-block about-section">
                 <h3 class="text-2xl font-semibold text-red-600">
@@ -573,7 +662,7 @@
           </div>
         </section>
         <!-- TECH STACK END -->
-      
+
         <!-- PORTOFOLIO START -->
         <section id="tech-stack" class="mb-26 px-12">
           <div class="pt-10 heading-animate-center">
@@ -653,7 +742,7 @@
               ></div>
               <!-- EXPERIENCE LIST END -->
             </div>
-      
+
             <div class="w-1/2 flex item-center justify-center">
               <div
                 class="relative w-full max-w-md aspect-[3/4] overflow-hidden rounded-2xl fade-up-full not-visited:"
@@ -690,25 +779,35 @@
           </div>
         </section>
         <!-- PORTOFOLIO END -->
-      
+
         <!-- WORK WITH START -->
         <section class="mb-96 px-12">
-          <div class="mb-16 ">
+          <div class="mb-16">
             <div class="fade-up">
               <h1 class="text-center text-3xl font-semibold mb-4">
                 Kerja Sama
               </h1>
               <h3 class="text-center text-xl text-slate-300">
-                Berikut adalah langkah-langkah saya untuk mengerjakan sebuah proyek
+                Berikut adalah langkah-langkah saya untuk mengerjakan sebuah
+                proyek
               </h3>
             </div>
-      
+
             <div class="mt-20">
               <div class="flex px-20 mx-auto">
                 <div class="w-1/2 border-r-2 px-3 border-white">
                   <div class="fade-up-full px-5 py-8">
-                    <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">1.</span>Analisis Kebutuhan</h1>
-                  <p class="px-2">Kita pastikan saya punya semua yang dibutuhin. mulai dari asset foto, desain, sampai informasi lainnya agar proyek kamu bisa selesai dengan lancar dan hasilnya sesuai harapan.</p>
+                    <h1
+                      class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold"
+                    >
+                      <span class="mr-4">1.</span>Analisis Kebutuhan
+                    </h1>
+                    <p class="px-2">
+                      Kita pastikan saya punya semua yang dibutuhin. mulai dari
+                      asset foto, desain, sampai informasi lainnya agar proyek
+                      kamu bisa selesai dengan lancar dan hasilnya sesuai
+                      harapan.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -716,16 +815,36 @@
                 <div class="w-1/2 border-r-2 px-3 border-white"></div>
                 <div class="w-1/2 px-3 border-white">
                   <div class="fade-up-full px-5 py-8">
-                  <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">2. </span>Riset</h1>
-                  <p class="px-2">Saya menyusun struktur model atau perancangan yang sesuai dengan kebutuhan proyek, sambil kembali mempelajari dan mendalami setiap detail yang dibutuhkan oleh website yang sedang saya kerjakan, agar hasil akhirnya bisa benar-benar optimal, fungsional, dan sesuai dengan tujuan yang diinginkan.</p>
+                    <h1
+                      class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 to-teal-400 bg-clip-text text-transparent w-fit font-bold"
+                    >
+                      <span class="mr-4">2. </span>Riset
+                    </h1>
+                    <p class="px-2">
+                      Saya menyusun struktur model atau perancangan yang sesuai
+                      dengan kebutuhan proyek, sambil kembali mempelajari dan
+                      mendalami setiap detail yang dibutuhkan oleh website yang
+                      sedang saya kerjakan, agar hasil akhirnya bisa benar-benar
+                      optimal, fungsional, dan sesuai dengan tujuan yang
+                      diinginkan.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="flex px-20 mx-auto">
                 <div class="w-1/2 border-r-2 px-3 border-white">
                   <div class="fade-up-full px-5 py-8">
-                    <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">3. </span>Development</h1>
-                  <p class="px-2">Setelah semua kebutuhan proyek telah didapatkan. langkah selanjutnya adalah proses pengembangan dan pembuatan, hal ini dilakukan dengan cara yang efisien dan sesuai dengan deadline yang disetujui</p>
+                    <h1
+                      class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold"
+                    >
+                      <span class="mr-4">3. </span>Development
+                    </h1>
+                    <p class="px-2">
+                      Setelah semua kebutuhan proyek telah didapatkan. langkah
+                      selanjutnya adalah proses pengembangan dan pembuatan, hal
+                      ini dilakukan dengan cara yang efisien dan sesuai dengan
+                      deadline yang disetujui
+                    </p>
                   </div>
                 </div>
               </div>
@@ -733,38 +852,60 @@
                 <div class="w-1/2 border-r-2 px-3 border-white"></div>
                 <div class="w-1/2 px-3 border-white">
                   <div class="fade-up-full px-5 py-8">
-                  <h1 class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 to-teal-400 bg-clip-text text-transparent w-fit font-bold"><span class="mr-4">4. </span>Hasil pertama</h1>
-                  <p class="px-2">Setelah pembuatan selesai, saya memastikan bahwa hasil dari pembuatan sesuai dengan kriteria dan tidak ada bug yang ditemui. lalu kamu bisa melakukan beberapa penyesuaian agar proyek mu berjalan dengan yang kamu inginkan.</p>
+                    <h1
+                      class="mb-3 text-2xl bg-linear-to-br/hsl from-blue-600 to-teal-400 bg-clip-text text-transparent w-fit font-bold"
+                    >
+                      <span class="mr-4">4. </span>Hasil pertama
+                    </h1>
+                    <p class="px-2">
+                      Setelah pembuatan selesai, saya memastikan bahwa hasil
+                      dari pembuatan sesuai dengan kriteria dan tidak ada bug
+                      yang ditemui. lalu kamu bisa melakukan beberapa
+                      penyesuaian agar proyek mu berjalan dengan yang kamu
+                      inginkan.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="fade-up-full max-w-2xl px-5 py-8 mx-auto text-center">
-              <h1 class="mb-3 mt-5 mx-auto text-3xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold">Hasil Final</h1>
-            <p class="px-2">Setelah proses pengembangan selesai, proyek telah diuji dan disesuaikan dengan kebutuhan yang ditentukan. Semua fitur berfungsi dengan baik tanpa ditemukan bug. Proyek siap digunakan, dan masih bisa disesuaikan lagi jika ada kebutuhan tambahan.</p>
-            <div class="flex justify-between mt-10 px-18">
-              <div class="relative group list-none">
-                <a
-                  href="#home"
-                  class="inline-block px-2 py-1 font-semibold text-2xl text-teal-300 rounded-2xl  transition-all duration-500 ease-in-out hover:text-white"
-                  >Kontak</a
-                >
-                <span
-                  class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-300 group-hover:left-0 group-hover:w-full transition-all duration-500 ease-in-out"
-                ></span>
+              <h1
+                class="mb-3 mt-5 mx-auto text-3xl bg-linear-to-br/hsl from-blue-600 80% to-teal-400 bg-clip-text text-transparent w-fit font-bold"
+              >
+                Hasil Final
+              </h1>
+              <p class="px-2">
+                Setelah proses pengembangan selesai, proyek telah diuji dan
+                disesuaikan dengan kebutuhan yang ditentukan. Semua fitur
+                berfungsi dengan baik tanpa ditemukan bug. Proyek siap
+                digunakan, dan masih bisa disesuaikan lagi jika ada kebutuhan
+                tambahan.
+              </p>
+              <div class="flex justify-between mt-10 px-18">
+                <div class="relative group list-none">
+                  <a
+                    href="#home"
+                    class="inline-block px-2 py-1 font-semibold text-2xl text-teal-300 rounded-2xl transition-all duration-500 ease-in-out hover:text-white"
+                    >Kontak</a
+                  >
+                  <span
+                    class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-300 group-hover:left-0 group-hover:w-full transition-all duration-500 ease-in-out"
+                  ></span>
+                </div>
+                <div class="relative group list-none">
+                  <a
+                    href="#home"
+                    class="inline-block px-2 py-1 font-semibold text-2xl text-teal-300 rounded-2xl transition-all duration-500 ease-in-out hover:text-white"
+                    >Kontak</a
+                  >
+                  <span
+                    class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-300 group-hover:left-0 group-hover:w-full transition-all duration-500 ease-in-out"
+                  ></span>
+                </div>
               </div>
-              <div class="relative group list-none">
-                <a
-                  href="#home"
-                  class="inline-block px-2 py-1 font-semibold text-2xl text-teal-300 rounded-2xl  transition-all duration-500 ease-in-out hover:text-white"
-                  >Kontak</a
-                >
-                <span
-                  class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-300 group-hover:left-0 group-hover:w-full transition-all duration-500 ease-in-out"
-                ></span>
-              </div>
-            </div>
-            <div class="w-full h-1 bg-white mt-8 rounded-full heading-animate-center"></div>
+              <div
+                class="w-full h-1 bg-white mt-8 rounded-full heading-animate-center"
+              ></div>
             </div>
           </div>
         </section>
