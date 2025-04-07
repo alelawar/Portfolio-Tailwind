@@ -10,3 +10,20 @@
 .navbar-fixed {
     @apply bg-black/20 backdrop-blur-lg fixed w-full top-0 z-10
 }
+
+.list-stack-md {
+    @apply w-1/5 min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg
+}
+
+.list-stack-mobile {
+    @apply min-w-40 mt-2 bg-white/20 backdrop-blur-2xl rounded-xl px-3 py-2 flex items-center justify-center gap-2 transition duration-300 hover:bg-white/30 hover:scale-105 hover:shadow-lg
+   
+}
+
+.underline-effect-white {
+    @apply absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:left-0 group-hover:w-full transition-all duration-500 ease-in-out
+}
+
+.detail-style {
+    @apply relative h-[25rem] cursor-pointer flex flex-row py-3 border-2 border-transparent rounded-xl open:rounded-2xl list-none appearance-none transition transform duration-700 ease-in-out hover:border-teal-400 hover:border-2 overflow-hidden open:border-violet-700  bg-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-0 open:before:opacity-40 before:transition-opacity before:duration-500
+}
